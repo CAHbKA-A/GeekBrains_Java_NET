@@ -68,10 +68,15 @@ public class Server {
 
     public void readMessage(SelectionKey selectionKey) throws IOException {
         SocketChannel client = (SocketChannel) selectionKey.channel();
-        ByteBuffer byteBuffer = ByteBuffer.allocate(256000);
+        ByteBuffer byteBuffer = ByteBuffer.allocate(36);
         client.read(byteBuffer);
+        /* преобразуем байтбуфер в фаил*/
+        FileBuilder fileBuilder = new FileBuilder();
+        fileBuilder.getFileByByteBuffer(byteBuffer, "recived.txt");
+        //fileBuilder.getFileByByteBuffer(byteBuffer, "recived.png");
         String message = new String((byteBuffer.array()));
         System.out.println("Message: "+ message);
     }
+
 
 }

@@ -10,28 +10,25 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Client {
-    private  final static ExecutorService THREAD_POOL = Executors.newFixedThreadPool(5);
-
+    private final static ExecutorService THREAD_POOL = Executors.newFixedThreadPool(1);
 
 
     public void start() {
-        for (int i = 0; i < 5; i++) {
-            THREAD_POOL.execute(() -> {
-                System.out.println("New client started on thread " + Thread.currentThread().getName());
-                try {
-                    SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 8888));
-                    while (true) {
-                        channel.write(ByteBuffer.wrap(String.format(
-                                "[%s] Message from thread %s",
-                                LocalDateTime.now(),
-                                Thread.currentThread().getName()).getBytes()));
-                        Thread.sleep(10000);
-                    }
-                } catch (IOException | InterruptedException e) {
-                    e.printStackTrace();
-                }
-            });
-        }
+
+        THREAD_POOL.execute(() -> {
+            System.out.println("New client started on thread " + Thread.currentThread().getName());
+            try {
+
+                SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 8888));
+                FilePrepare filePrepare = new FilePrepare();
+              //  channel.write(filePrepare.createByteBuffer("test.png"));
+                channel.write(filePrepare.createByteBuffer("txt.txt"));
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
     }
 
 
