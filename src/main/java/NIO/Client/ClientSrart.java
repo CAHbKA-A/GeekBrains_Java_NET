@@ -1,6 +1,6 @@
-package Client;
+package NIO.Client;
 
-import Client.services.Client;
+import NIO.Client.services.Client;
 
 public class ClientSrart {
     public static void main(String[] args) {

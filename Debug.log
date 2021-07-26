@@ -1,0 +1,401 @@
+INFO    2021-07-25 01:13:02 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:13:09 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:20:06 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:20:12 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:20:12 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+INFO    2021-07-25 01:24:37 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:24:43 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:24:43 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:24:43 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:24:43 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:122) - Client Alex authorized
+INFO    2021-07-25 01:24:43 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:25:46 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:25:50 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:25:50 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:25:50 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:25:50 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:122) - Client Alex authorized
+INFO    2021-07-25 01:25:50 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+ERROR   2021-07-25 01:25:51 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: java.nio.HeapByteBuffer
+INFO    2021-07-25 01:28:52 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:28:56 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:28:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:28:56 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:28:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:120) - Client Alex authorized
+INFO    2021-07-25 01:28:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:28:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 01:31:19 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:31:25 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:31:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:31:25 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:31:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:120) - Client Alex authorized
+INFO    2021-07-25 01:31:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:31:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 01:31:29 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:97) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 01:32:57 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:33:07 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:33:07 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:33:07 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:33:07 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:122) - Client Alex authorized
+INFO    2021-07-25 01:33:07 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:34:32 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:34:35 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:34:35 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:34:36 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:34:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:34:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:34:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 01:34:37 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:100) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: java.nio.HeapByteBuffer
+INFO    2021-07-25 01:44:01 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:44:11 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:44:11 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:44:11 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:44:11 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:44:11 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:44:11 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 01:44:12 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:100) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: java.nio.HeapByteBuffer
+INFO    2021-07-25 01:45:21 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:45:24 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:45:24 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:45:24 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:45:24 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:45:24 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:45:24 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 01:54:00 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:54:03 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:54:03 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:54:03 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:54:03 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:54:03 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:54:03 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 01:56:29 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:56:34 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:56:34 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:56:34 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:56:34 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:56:34 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:56:34 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 01:58:41 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 01:58:45 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:58:45 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:58:45 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:58:45 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:58:45 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:58:45 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 01:59:42 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 01:59:42 [pool-1-thread-2] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.BindException: Address already in use: JVM_Bind
+INFO    2021-07-25 02:00:05 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:00:09 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:00:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:00:09 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:00:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:00:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:00:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 02:04:56 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:05:00 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:05:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:05:00 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:05:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:05:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:05:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 02:11:34 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:11:39 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:11:39 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:11:39 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:11:39 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:11:39 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:11:39 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 02:11:40 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 02:12:15 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:12:22 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:12:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:12:22 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:12:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:12:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:12:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 02:12:24 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 02:15:21 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:15:23 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:15:23 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:15:23 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:15:23 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:15:23 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:15:23 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 02:15:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 02:18:07 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:18:09 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:18:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:18:10 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:18:10 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:18:10 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:18:10 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 02:20:28 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:20:31 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:20:31 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 02:28:00 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:28:01 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:28:01 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:28:01 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:28:01 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:28:01 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:28:01 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 02:28:03 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 02:29:27 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 02:29:28 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 02:29:28 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 02:29:29 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 02:29:29 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 02:29:29 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 02:29:29 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 02:29:30 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:10:03 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:10:06 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:10:06 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:10:06 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:10:06 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 11:10:06 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:10:06 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:10:08 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:11:49 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:11:53 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:11:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:11:53 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:11:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:123) - Client Alex authorized
+INFO    2021-07-25 11:11:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:11:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:11:55 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:98) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:17:28 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:17:30 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:17:30 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:17:30 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:17:30 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:124) - Client Alex authorized
+INFO    2021-07-25 11:17:30 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:17:30 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:17:32 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:18:15 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:18:17 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:18:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:18:17 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:18:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:124) - Client Alex authorized
+INFO    2021-07-25 11:18:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:18:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:18:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:19:16 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:19:18 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:19:18 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:19:19 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:19:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:19:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:19:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:19:20 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:19:45 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:19:57 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:19:57 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:19:57 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:19:57 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:19:57 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:19:57 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:19:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:20:29 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:20:31 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:20:31 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:20:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:21:13 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:21:15 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:21:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:21:15 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:21:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:21:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:21:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:35:08 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:35:09 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:35:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:35:09 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:35:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:35:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:35:09 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:35:11 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:38:47 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:38:51 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:38:51 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:38:51 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:38:51 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:38:51 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:38:51 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:38:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:39:17 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:39:21 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:39:21 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:39:21 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:39:21 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:39:21 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:39:21 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:45:55 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:45:55 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:45:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:45:56 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:45:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:45:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:45:56 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:45:57 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:102) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: IO.Client.Services.Cat
+INFO    2021-07-25 11:46:11 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:46:15 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:46:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:46:15 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:46:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:46:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:46:15 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 11:46:16 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:102) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: IO.Client.Services.Cat
+INFO    2021-07-25 11:46:54 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:46:58 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:46:58 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:46:58 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:46:58 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:46:58 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:46:58 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:46:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:90) - FIle received
+ERROR   2021-07-25 11:47:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:48:34 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:48:37 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:48:37 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:48:37 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:48:37 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:48:37 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:48:37 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:48:38 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:90) - FIle received
+ERROR   2021-07-25 11:48:39 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:52:23 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:52:25 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:52:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:52:25 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:52:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:52:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:52:25 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:52:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:90) - FIle received
+ERROR   2021-07-25 11:52:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 11:54:33 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:54:36 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:54:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:54:36 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:54:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:54:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:54:36 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 11:57:37 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 11:57:40 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 11:57:40 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 11:57:40 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 11:57:40 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 11:57:40 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 11:57:40 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:28:30 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:28:31 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:28:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:28:31 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:28:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:28:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:28:31 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:31:24 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:31:26 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:31:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:31:26 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:31:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:31:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:31:26 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:33:20 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:33:22 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:33:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:33:22 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:33:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:33:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:33:22 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:39:42 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:39:43 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:39:43 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:39:44 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:39:44 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:39:44 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:39:44 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 23:39:45 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:102) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: IO.Client.Services.Cat
+INFO    2021-07-25 23:40:15 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:40:19 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:40:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:40:19 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:40:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:40:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:40:19 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 23:40:20 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:102) - Read message IO error: java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: IO.Client.Services.Cat
+INFO    2021-07-25 23:40:46 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:40:48 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:40:48 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:40:48 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:40:48 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:40:48 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:40:48 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:42:11 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:42:13 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:42:13 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:42:13 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:42:13 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:42:13 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:42:13 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:43:04 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:43:08 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:43:08 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:43:08 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:43:08 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:43:08 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:43:08 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:44:38 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:44:41 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:44:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:44:41 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:44:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:44:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:44:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:45:51 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:45:53 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:45:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:45:53 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:45:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:45:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:45:53 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:47:40 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:47:41 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:47:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:47:41 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:47:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:47:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:47:41 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:49:14 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:49:17 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:49:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:49:17 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:49:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:49:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:49:17 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+INFO    2021-07-25 23:49:53 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:50:00 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:50:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:50:00 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:50:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:50:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:50:00 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
+ERROR   2021-07-25 23:50:01 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:99) - Socket timeout error: java.net.SocketException: Connection reset
+INFO    2021-07-25 23:51:57 [main] IO.Server.service.Server (Server.java:25) - Server starting...
+INFO    2021-07-25 23:51:59 [main] IO.Server.service.Server (Server.java:34) - Client Connecting..
+INFO    2021-07-25 23:51:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:55) - Somebody sent to server message: /auth A A
+DEBUG   2021-07-25 23:51:59 [pool-1-thread-1] IO.Server.service.DataBaseService (DataBaseService.java:119) - select Nickname from Users where Login = 'A'and Password ='A';
+INFO    2021-07-25 23:51:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:125) - Client Alex authorized
+INFO    2021-07-25 23:51:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:74) - Alex sent message to server : /ready_to_transfer_File
+INFO    2021-07-25 23:51:59 [pool-1-thread-1] IO.Server.service.ClientHandler (ClientHandler.java:87) - Client ready to transfer file
