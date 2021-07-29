@@ -15,13 +15,13 @@ public class Client {
 
     public void start() {
         /*поток для служебных сообщений
-        * запусщен всегда*/
+         * запусщен всегда*/
         THREAD_POOL.execute(() -> {
             System.out.println("New client started on thread " + Thread.currentThread().getName());
             try {
 
                 SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 8888));
-                FilePrepare filePrepare = new FilePrepare();
+                FilePrepare filePrepare = new FilePrepare("test.png");
                 sendMessage(channel,"1:redy2trs//");
                 //channel.write(ByteBuffer.wrap("1:redy2trs".getBytes(StandardCharsets.UTF_8)));
                 while (true){
@@ -44,7 +44,7 @@ public class Client {
 
         String message = new String((byteBuffer.array()));
         System.out.println("Message from server: " + message);
-       checkRecivedMessage(channel,message);
+        checkRecivedMessage(channel,message);
     }
 
     public void checkRecivedMessage(SocketChannel channel,String message) throws IOException {
@@ -53,10 +53,9 @@ public class Client {
             System.out.println("Server wait file info");
             try {
                 /*определяем расзмер буфера для передачи инфы о файле, ил
-
                  */
-                FilePrepare filePrepare = new FilePrepare();
-              //  System.out.println();
+                FilePrepare filePrepare = new FilePrepare("test.png");
+                //  System.out.println();
                 sendMessage(channel,filePrepare.getFileInfo("test.png"));
             } catch (IOException e) {
                 e.printStackTrace();
@@ -64,9 +63,9 @@ public class Client {
         }
         if (command[0].equals("4:okLetsGo")){
             System.out.println("sending");
-        //    transferFile("txt.txt");
-            FilePrepare filePrepare = new FilePrepare();
-            channel.write(filePrepare.createByteBuffer("test.png"));
+            //    transferFile("txt.txt");
+            FilePrepare filePrepare = new FilePrepare("test.png");
+         //   channel.write(filePrepare.createByteBuffer("test.png"));
         }
     }
 
