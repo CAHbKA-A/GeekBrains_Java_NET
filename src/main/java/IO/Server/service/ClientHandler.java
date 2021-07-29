@@ -86,7 +86,9 @@ public class ClientHandler {
 
                             LOGGER.info("Client ready to transfer file");
                             sendMessage("/lets_go");
-                            FileReceiver.start();
+
+                           FileReceiver.start();
+                          //  FileReceiver.recieveFileAsFile("txt.txt");
                             LOGGER.info("FIle received");
                         }
 

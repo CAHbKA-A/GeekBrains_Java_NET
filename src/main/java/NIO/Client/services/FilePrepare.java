@@ -10,10 +10,10 @@ import java.util.Arrays;
 
 public class FilePrepare implements Serializable {
     //private static final long serialVersionUID = 1L;
-     private long fileSize;
+    private long fileSize;
     private String fileName;
     private String fileInfo;
-   private byte [] fileBin;
+    private byte [] fileBin;
 
 
 
@@ -50,10 +50,11 @@ public class FilePrepare implements Serializable {
     public String getFileName() {
         return fileName;
     }
-    public String getFileInfo() {
+    public String getFileInfo(String s) {
         return fileInfo;
     }
     public byte[] getFileBin() {  return fileBin;    }
+
 
 //    public ByteBuffer createByteBuffer(String fileName) throws IOException {
 //

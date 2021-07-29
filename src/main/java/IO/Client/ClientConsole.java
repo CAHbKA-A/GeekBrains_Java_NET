@@ -1,7 +1,9 @@
 package IO.Client;
 
 
-import IO.Client.Services.FilePrepare;
+import IO.Server.service.FilePrepare;
+import lib.FileObjectLibClass;
+
 
 import java.io.*;
 import java.net.Socket;
@@ -101,7 +103,8 @@ private void singIn(String login, String passwodr){
                         if (serverMess.equals("/lets_go")) {
 
                             System.out.println("transfer.....-> Server....");
-                            sendFile("txt.txt");
+                            sendFileAsObject("txt.txt");
+                           // sendFileAsFile("txt.txt");
                             break;
                         }
                     } else {
@@ -122,47 +125,48 @@ private void singIn(String login, String passwodr){
             e.printStackTrace();
         }
     }
-    public static void sendFile(String fileName) {
+    public static void sendFileAsObject(String fileName) {
 
         try {
-         //   sendMessage("/ready_to_transfer_File");
-            FilePrepare filePrepare = new FilePrepare(fileName);
-           // Cat filePrepare = new Cat();
 
-                sleep(1000);
+            FileObjectLibClass filePrepare = new FileObjectLibClass(fileName);
+
+            sleep(1000);
             Socket s = new Socket("localhost", 8880);
 
             ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
-            System.out.println(filePrepare);
             out.writeObject(filePrepare);
-          //  out.writeObject(filePrepare);
             out.flush();
             System.out.println("done");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
+
         }
     }
 
 
 
 
-
-
-//
-//    public static void serializeAddressJDK7(FilePrepare filePrepare) {
-//
-//        try (ObjectOutputStream oos =
-//                     new ObjectOutputStream(new FileOutputStream("serial.ser"))) {
-//
-//            oos.writeObject(filePrepare);
-//            System.out.println("Done");
-//
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
+//        public void sendFileAsFile (String fileName) throws IOException {
+//            Socket socket = new Socket("localhost", 8880);
+//            byte[] b=new byte[1024];
+//            File f = new File(fileName);
+//            try {
+//                OutputStream dout = new DataOutputStream (new BufferedOutputStream (socket.getOutputStream ()));
+//                InputStream ins=new FileInputStream(f);
+//                int n = ins.read(b);
+//                while (n != -1) {
+//                    dout.write (b);
+//                    dout.flush ();
+//                    n = ins.read(b);
+//                }
+//                ins.close();
+//                dout.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
 //        }
-//
-//    }
+    }
 
 
 
-}
