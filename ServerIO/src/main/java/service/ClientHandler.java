@@ -52,7 +52,7 @@ public class ClientHandler {
                 try {
                     socket.setSoTimeout(120000);
                     String inputMessage = readMessage();
-                    LOGGER.info("Somebody sent to server message: "+inputMessage);
+                    LOGGER.info("Somebody sent to server message: " + inputMessage);
                     authentication(inputMessage);
 
                 } catch (SocketTimeoutException socketTimeoutException) {
@@ -71,7 +71,7 @@ public class ClientHandler {
                 while (true) {
                     socket.setSoTimeout(0);
                     String inputMessage = readMessage();
-                    LOGGER.info(this.name+ " sent message to server : "+inputMessage);
+                    LOGGER.info(this.name + " sent message to server : " + inputMessage);
 
                     if (inputMessage.trim().startsWith("/")) { // обработка команд
                         //TODO переделать на caseof
@@ -85,15 +85,15 @@ public class ClientHandler {
                             //TODO в отдельный  поток в executor
 
                             LOGGER.info("Client ready to transfer file");
-                            sendMessage("/lets_go");
 
-                           FileReceiver.start();
-                          //  FileReceiver.recieveFileAsFile("txt.txt");
+
+                            FileReceiver.start(socket);
+//                              FileReceiver.recieveFileAsFile("txt.txt");
                             LOGGER.info("FIle received");
-                        }
 
-                    } else  //не служебные сообщения
-                    {/* !!!!! Перендача файла*/}
+                        }
+//
+                    }
 
                 }
 
@@ -110,8 +110,6 @@ public class ClientHandler {
     }
 
 
-
-
     private void authentication(String inputMessage) {
         if (inputMessage.startsWith("/auth")) {
             String[] parts = inputMessage.split(" ");
@@ -122,16 +120,15 @@ public class ClientHandler {
                     this.name = nick;
 
 
-
-                        this.isAuthorized = true;
-                        LOGGER.info("Client " + this.name + " authorized");
-                        sendMessage("/authok");
-                        Server.subScribe(this);
-                        this.login = parts[1];
+                    this.isAuthorized = true;
+                    LOGGER.info("Client " + this.name + " authorized");
+                    sendMessage("/authok");
+                    Server.subScribe(this);
+                    this.login = parts[1];
 
                 } else {
                     sendMessage(Server.getTime() + "  " + "Wrong login or password. Try again.");
-                   LOGGER.debug(this.name + " Wrong login or password.");
+                    LOGGER.debug(this.name + " Wrong login or password.");
                 }
             }
         }

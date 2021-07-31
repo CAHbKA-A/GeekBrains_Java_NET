@@ -17,40 +17,38 @@ public class ClientConsole {
     public static void main(String[] args) {
         ClientConsole clientConsole = new ClientConsole();
     }
+
     private ClientConsole() {
 
-      //  GUIClient();
+        //  GUIClient();
 
         try {
             connection();
 
             readMessage();
 //TODO /*ТУТ будет GUI авторизации*/
-            singIn ("A","A");
+            singIn("A", "A");
 
 
             //TODO  тут будет запуск сбора списка фалов  и принятие решение на синхронизаци.
             //TODO тут будет запущена синхра
             /*передаем фаил*/
             sendMessage("/ready_to_transfer_File");
-
-           // sendMessage();
-        } catch (IOException e) {
+            sleep(1000);
+            System.out.println("transfer.....-> Server....");
+            sendFileAsObject("txt.txt", socket);
+            sendMessage("/complite");
+            // sendMessage();
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
 
 
+    private void singIn(String login, String passwodr) {
+        sendMessage("/auth " + login + " " + passwodr);
 
-
-
-
-private void singIn(String login, String passwodr){
-   sendMessage("/auth " + login + " " + passwodr);
-
-}
-
-
+    }
 
 
     private void connection() throws IOException {
@@ -88,7 +86,7 @@ private void singIn(String login, String passwodr){
 
 
                         if (serverMess.equals("/authok")) {
-                            System.out.println("\n\n" +  "\nYou connected! \n");
+                            System.out.println("\n\n" + "\nYou connected! \n");
 
                         }
 
@@ -97,13 +95,13 @@ private void singIn(String login, String passwodr){
                             System.out.println("Connection closed \n");
                             break;
                         }
-                        if (serverMess.equals("/lets_go")) {
-
-                            System.out.println("transfer.....-> Server....");
-                            sendFileAsObject("txt.txt");
-                           // sendFileAsFile("txt.txt");
-                            break;
-                        }
+//                        if (serverMess.equals("/lets_go")) {
+//
+//                            System.out.println("transfer.....-> Server....");
+//                            sendFileAsObject("txt.txt", socket);
+//                           // sendFileAsFile("txt.txt");
+//                            break;
+//                        }
                     } else {
                         System.out.println(serverMess + "\n");
                         //    Loging.writeToLog(serverMess, loginField.getText());
@@ -114,7 +112,7 @@ private void singIn(String login, String passwodr){
         }).start();
     }
 
-    public  void sendMessage(String message) {
+    public void sendMessage(String message) {
 
         try {
             dos.writeUTF(message);
@@ -122,14 +120,16 @@ private void singIn(String login, String passwodr){
             e.printStackTrace();
         }
     }
-    public static void sendFileAsObject(String fileName) {
+
+    public static void sendFileAsObject(String fileName, Socket s) {
 
         try {
 
             FileObjectLibClass filePrepare = new FileObjectLibClass(fileName);
 
             sleep(1000);
-            Socket s = new Socket("localhost", 8880);
+            //      Socket
+            //     s = new Socket("localhost", 8880);
 
             ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
             out.writeObject(filePrepare);
@@ -140,8 +140,6 @@ private void singIn(String login, String passwodr){
 
         }
     }
-
-
 
 
 //        public void sendFileAsFile (String fileName) throws IOException {
@@ -163,7 +161,7 @@ private void singIn(String login, String passwodr){
 //                e.printStackTrace();
 //            }
 //        }
-    }
+}
 
 
 

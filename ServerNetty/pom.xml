@@ -33,6 +33,11 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.66.Final</version>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.66.Final</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -40,5 +45,6 @@
             <version>5.8.0-M1</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 </project>
