@@ -1,8 +1,5 @@
 package service;
 
-//import org.apache.log4j.LogManager;
-//import org.apache.log4j.Logger;
-
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -12,6 +9,8 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class ClientHandler {
@@ -22,6 +21,7 @@ public class ClientHandler {
     private String name;
     private String login;
     private static final Logger LOGGER = LogManager.getLogger(ClientHandler.class.getName());
+  //  private static ExecutorService executorServiceForFileTransfer;
 
     private boolean isAuthorized;
 
@@ -38,6 +38,9 @@ public class ClientHandler {
         isAuthorized = false;
         this.server = server;
         this.socket = socket;
+
+
+ //       executorServiceForFileTransfer = Executors.newFixedThreadPool(2);//2 потока на клиента
 
         try {
             this.dis = new DataInputStream(socket.getInputStream());
@@ -85,10 +88,13 @@ public class ClientHandler {
                             //TODO в отдельный  поток в executor
 
                             LOGGER.info("Client ready to transfer file");
-
-
                             FileReceiver.start(socket);
-//                              FileReceiver.recieveFileAsFile("txt.txt");
+//                            Thread FileReceiverThread = new Thread(() -> {
+//                                FileReceiver.start(socket);
+//                            });
+
+//                             addThread(FileReceiverThread);
+
                             LOGGER.info("FIle received");
 
                         }
@@ -102,8 +108,6 @@ public class ClientHandler {
                 socketTimeoutException2.printStackTrace();
             } catch (IOException e) {
                 LOGGER.error("Read message IO error: " + e);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
             }
         });
         server.addThread(clientHandlerThread);
@@ -175,4 +179,9 @@ public class ClientHandler {
             }
         }
     }
+
+
+//    public void addThread(Thread ch) {
+//        executorServiceForFileTransfer.execute(ch);
+//    }
 }
