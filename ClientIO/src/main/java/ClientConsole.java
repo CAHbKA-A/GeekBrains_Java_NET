@@ -36,7 +36,7 @@ public class ClientConsole {
             sendMessage("/ready_to_transfer_File");
             sleep(1000);
             System.out.println("transfer.....-> Server....");
-            sendFileAsObject("txt.txt", socket);
+            sendFileAsObject("CLIENT_FOLDER/txt.txt", socket);
             sendMessage("/complite");
             // sendMessage();
         } catch (IOException | InterruptedException e) {
@@ -121,7 +121,7 @@ public class ClientConsole {
         }
     }
 
-    public static void sendFileAsObject(String fileName, Socket s) {
+    public static void sendFileAsObject (String fileName, Socket s) {
 
         try {
 

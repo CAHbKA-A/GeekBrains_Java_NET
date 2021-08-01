@@ -13,11 +13,18 @@ import java.net.Socket;
 public class FileReceiver {
 
 
-    public static void start(Socket socket) throws IOException, ClassNotFoundException {
+    public static void start(Socket socket)   {
 
-        ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
+        ObjectInputStream in = null;
+        try {
+            in = new ObjectInputStream(socket.getInputStream());
+
         FileObjectLibClass filePrepare = (FileObjectLibClass) in.readObject();
         saveAsFile(filePrepare);
+        System.out.println("FIle received");
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
 
